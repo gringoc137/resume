@@ -1,0 +1,237 @@
+%-------------------------
+% Resume in Latex
+% Author : Girish Mohan
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[document]{ragged2e}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemCourse}[2]{
+  \item\small{
+    \textbf{#1}{ #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingCollege}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeResearchSubheading}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+         \textbf{\small #1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{3pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubItemCourse}[2]{\resumeItemCourse{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\justify
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://girish-mohan.github.io}{\Large Girish Mohan}} & Email : \href{mailto:mohangiri1999@gmail.com}{mohangiri1999@gmail.com}\\
+  \href{http://girish-mohan.github.io}{http://girish-mohan.github.io} & Mobile : +91 8098860703 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheadingCollege
+      {Manipal Institute of Technology}{Manipal, Karnataka}
+      {Bachelor of Technology in Information Technology;  GPA: 8.45/10.0}{Aug 2016 -- Dec 2018}
+      {Minor in Computational Mathematics} 
+    \resumeSubheading
+      {Maharishi International Residential School}{Chennai, Tamil Nadu}
+      {CBSE Board;  12th Percentile: 90}{July 2014 -- May 2016}
+    \resumeSubheading
+      {Lakshmi School}{Madurai, Tamil Nadu}
+      {ICSE Board;  10th Percentile: 92.7}{July 2012 -- May 2014}
+  \resumeSubHeadingListEnd
+
+%-----------RESEARCH INTERESTS-----------------
+\section{Research Interests}
+      {Theoretical Machine Learning, Computer Vision, Computational Neuroscience, Robotics}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Chella Software}{Madurai, Tamil Nadu}
+      {Software Intern}{May 2018 - June 2018}
+      \resumeItemListStart
+        \resumeItem{Angular}
+          {Assisted in the development of the front end of the web application for Stock Exchange and Fund management.}
+        \resumeItem{Hibernate ORM}
+          {Hibernate ORM is an object-relational mapping tool for the Java programming language. It provides a framework for mapping an object-oriented domain model to a relational database. Worked on an API to integrate the database with the front end.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {SolarMobil}{Manipal, Karnataka}
+      {Telemetry and Data Analysis Engineer}{Sep 2017 - Nov 2018}
+      \resumeItemListStart
+        \resumeItem{Data Visualization}
+          {Developed an android and web app for remote real time monitoring and analysis of data transmitted from the solar vehicle. Data transmitted is stored in a NoSQL cloud database.}
+        \resumeItem{Computer Vision}
+          {Integrated a camera guidance system that aids in maneuvering in reverse with a Raspberry Pi and PiCam setup.}
+        \resumeItem{Torque Vectoring}
+          {Torque vectoring provides the differential with the ability to vary the torque to each wheel. Programmed a micro-controller to implement the algorithm with yaw rate and steering angle as inputs from an IMU.}
+        \resumeItem{Calibration of Sensors}
+          {Fine tuned the readings sampled by sensors and applied filters like moving median and Kalman filter that resulted in an accuracy improvement of 5\%.}
+        \resumeItem{Car Dashboard}
+          {Built a user interface that utilizes the PyQt5 toolkit to help the driver keep track of all readings and warning signals.}
+        \resumeItem{Wiring}
+          {Designed the mounts and routed the wiring of low voltage components using CATIA Electrical Wiring.}
+        \resumeItem{Awards}
+          {SolarMobil is the first student led Indian research team to fabricate a successful solar powered prototype. The prototype was awarded the first position in ASME Student Contest and third place at Anveshan, an Inter-University South Zone Student Research Conference.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Manipal Institute of Technology}{Manipal, Karnataka}
+      {Teaching Assistant}{Spring 2019}
+      \resumeItemListStart
+        \resumeItem{Teaching Assistant - Apple Design Studio}
+          {The course conducted with assistance from Apple India had 30 students enrolled after a rigorous selection exam. Involved in creating assignment, exams and conducting recitation sessions.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------RESEARCH-----------------
+\section{Research}
+  \resumeSubHeadingListStart
+    \resumeResearchSubheading{Meta Reinforcement Learning with Episodic Recall}{Feb 2019 - Present}\\
+        \small{
+        {Issue to be addressed: Learning tasks excel at specific open-ended tasks, but they forget what they learn about that task as soon as the next begins. Ideally, when a task reoccurs, the agent must ‘pick up where it left off’. But in reality, the agent explores again instead of immediately exploiting the previously discovered solutions. \vspace{-2pt}}
+         }
+    \resumeResearchSubheading{Morphed Face Detection by degradation of images}{Sep 2018 - Dec 2018}\\
+        \small{
+        {Issue to be addressed: With the rise in image editing applications, it has become easier to morph face images to generate new faces that are difficult to distinguish from real ones. Most face recognition algorithms fail to effectively detect morphed images.\vspace{-2pt}}
+         }
+         \\[3pt]
+        \small{
+        {Solution proposed: Morphed images lose facial features at a faster rate on degradation through JPEG compression. Siamese network is used to compare if the degraded and original image are identical. \vspace{-2pt}}
+         }\\
+    \resumeResearchSubheading{Security in IoT environment}{Jan 2018 - May 2018}\\
+        \small{
+        {Issue to be addressed: Security in an Internet of Things environment to prevent modification of data from any brute force attack by using short key with less computation power.\vspace{-2pt}}
+         }
+         \\[3pt]
+        \small{
+        {Solution proposed: A multilevel paradigm consisting of XOR cipher and Elliptical Curve Cryptography is implemented using a basic setup and performance is analyzed. \vspace{-2pt}}
+         }\\
+  \resumeSubHeadingListEnd
+
+
+%-----------SELECTED PROJECTS-----------------
+\section{Selected Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Text Classification}
+      {Segregate emails to authors based on words present using Naive Bayes method.}
+    \resumeSubItem{Vicinity}
+      {Built an iOS app to locate the nearest facility and guide the user to reach it.}
+    \resumeSubItem{Budget Tracker}
+      {Developed an application to monitor the cash flow using Java swings with MySQL integration.}
+   \resumeSubItem{Server Monitor}
+      {Web app to detect server status change based on reply message to corresponding request and notify subscribed users on WhatsApp in real time.}
+  \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS AND POSITIONS-----------------
+\section{Certifications and Positions}
+  \resumeSubHeadingListStart
+    \resumeSubItemCourse{Practical Machine Learning}
+      {by Johns Hopkins University on Coursera}
+    \resumeSubItemCourse{Machine Learning}
+      {by Stanford University on Coursera}
+    \resumeSubItemCourse{Computational Neuroscience}
+      {by University of Washington on Coursera}
+    \resumeSubItemCourse{Lead Web Developer}
+      {at The Editorial Board, Manipal}
+    \resumeSubItemCourse{Treasurer}
+      {at Human Powered Endeavors (Official Cycling Club of Manipal Institute of Technology)}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItemCourse{Languages}
+    {: Python, C, C++, Java, JavaScript, HTML/CSS, MATLAB, Swift}
+    \resumeSubItemCourse{Frameworks}
+    {: TensorFlow, Django, Angular}
+    \resumeSubItemCourse{Version Control}
+    {: Git}
+    \resumeSubItemCourse{Mobile Applications}
+    {: Android, Apple iOS App Development}
+    
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
